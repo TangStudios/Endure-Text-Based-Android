@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back,"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/asdf"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="150dp"
+        android:textColor="#000000"
+        android:textSize="65sp"
+        android:id="@+id/welcomeBack"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Continue Story"
+        android:layout_marginBottom="10dp"
+        android:onClick="onContinueStory"
+        android:fontFamily="monospace"
+        android:textSize="18sp"/>
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Restart Story"
+        android:onClick="onRestartStory"
+        android:fontFamily="monospace"
+        android:textSize="18sp"/>
+
+</LinearLayout>

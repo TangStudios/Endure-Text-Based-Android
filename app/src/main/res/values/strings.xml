@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Endure: After the End</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_endure">ENDURE</string>
+    <string name="title_subtitle">After the End</string>
+    <string name="button_play_text">PLAY</string>
+    <string name="second_enter_name">Enter Your Name</string>
+    <string name="second_go_button">GO!</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="console_health_label">Health: </string>
+    <string name="console_hunger_text">Hunger: </string>
+    <string name="console_thirst_text">Thirst: </string>
+    <string name="console_sword_damage_text">Sword Damage: </string>
+    <string name="console_food_text">-Food:</string>
+    <string name="console_health">100</string>
+    <string name="console_hunger">10</string>
+    <string name="console_food">2</string>
+    <string name="console_thirst">10</string>
+    <string name="console_water_text">-Water:</string>
+    <string name="console_water">2</string>
+    <string name="console_sword_damage">10</string>
+    <string name="game_over_text">Game Over</string>
+    <string name="game_over_created">Created by Wilson Tang</string>
+    <string name="event1_enemy_health">Enemy Health:</string>
+    <string name="enemy_sword_damage_text">Sword Damage:</string>
+    <string name="enemy_sword_damage">10</string>
+
+
+</resources>

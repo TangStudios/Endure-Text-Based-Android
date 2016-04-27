@@ -1,0 +1,53 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tangstudios.wilson.endureaftertheend" >
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/endure_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tangstudios.wilson.endureaftertheend.StartActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.EnterNameActivity"
+            android:label="Enter Name Activity"
+             />
+        <activity android:name=".ContinueActivity"
+            android:label="Continue Activity"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.Console"
+            android:label="Console Screen" />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.EventOne"
+            android:label="Event One"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.EventTwo"
+            android:label="Event Two"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.EventThree"
+            android:label="Event Three"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.EventFour"
+            android:label="Event Four"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.GameEnd"
+            android:label="Game End"
+             />
+        <activity android:name="com.tangstudios.wilson.endureaftertheend.GameOver"
+            android:label="Game Over"
+             />
+    </application>
+
+</manifest>

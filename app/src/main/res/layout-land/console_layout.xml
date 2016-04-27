@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffffff"
+    android:focusableInTouchMode="false"
+    android:gravity="center|top"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/console_scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear">
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_health_label"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_health"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:id="@+id/health"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_hunger_text"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_hunger"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/hunger"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_food_text"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_food"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/food"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_thirst_text"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_thirst"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/thirst"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_water_text"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_water"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/water"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_sword_damage_text"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/console_sword_damage"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sword_damage"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gun Dmg:"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gun_display"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gun_damage"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Blts:"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/gun_display_2"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="20sp"
+                android:textColor="#ff000000"
+                android:fontFamily="monospace"
+                android:layout_marginTop="5dp"
+                android:id="@+id/bullets"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="Forw."
+                android:textSize="18sp"
+                android:onClick="onForward"
+                android:fontFamily="monospace"
+                android:id="@+id/forward"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="Eat"
+                android:textSize="18sp"
+                android:onClick="onEat"
+                android:fontFamily="monospace"
+                android:id="@+id/eat"
+                android:layout_weight="1"/>
+8
+            <Button
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="Drink"
+                android:textSize="18sp"
+                android:onClick="onDrink"
+                android:fontFamily="monospace"
+                android:id="@+id/drink"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Special Option"
+
+                android:fontFamily="monospace"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                android:id="@+id/special"
+                android:onClick="onSpecial"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
